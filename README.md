@@ -34,3 +34,45 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+# GAMESTORE TOP-UP API
+
+## Base URL
+http://localhost:3000/api
+
+---
+
+## Authentication
+
+Header:
+x-api-key: YOUR_API_KEY
+
+---
+
+## GET /products
+
+Description:
+Get product list.
+
+Headers:
+x-api-key: YOUR_API_KEY
+
+Response:
+{
+  "status": "success",
+  "data": []
+}
+
+---
+
+## POST /order
+
+Description:
+Create new order.
+
+Body:
+{
+  "productId": 1,
+  "userId": "12345678"
+}
